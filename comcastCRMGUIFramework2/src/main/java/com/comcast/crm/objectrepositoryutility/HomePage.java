@@ -17,7 +17,8 @@ public class HomePage {
 	@FindBy(partialLinkText = "Organizations")
 	private WebElement orglink;
 	
-	
+    @FindBy(xpath = "//a[text()='Products']")
+    private WebElement productlink;	
 
 	@FindBy(partialLinkText = "Contacts")
 	private WebElement contactlink;
@@ -35,9 +36,9 @@ public class HomePage {
 	private WebElement signOutLink;
 	
 	
-//	public WebElement getProductlink() {
-//		return productlink;
-//	}
+	public WebElement getProductlink() {
+		return productlink;
+	}
 	
 	public WebElement getOrglink() {
 		return orglink;
