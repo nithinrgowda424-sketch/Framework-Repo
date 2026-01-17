@@ -95,7 +95,7 @@ public class WebDriverUtility {
 		act.doubleClick(element).perform();
 	}
 	
-	public void moveByOffset(WebDriver driver,int x,int y ) {
+	public void moveByOffset(WebDriver driver, int x,int y ) {
 		Actions act = new Actions(driver);
 		act.moveByOffset(x,y).perform();
 		
